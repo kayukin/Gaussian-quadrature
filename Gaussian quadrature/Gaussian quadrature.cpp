@@ -5,11 +5,11 @@
 using namespace std;
 
 double func(double x) {
-	return pow(x, x);
+	return exp(1 / (x - 0));
 }
 
 int main(int argc, char* argv[])
 {
-	cout << Gauss_Legendre_Integration_3pts(0, 1.5, func) << endl;
+	cout << Gauss_Legendre_Integration_3pts(0, 1, func) << endl;
 	system("pause");
 }
